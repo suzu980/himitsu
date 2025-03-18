@@ -2,7 +2,9 @@ package home
 
 import tea "github.com/charmbracelet/bubbletea"
 
+type HomeState int
 type model struct {
+	screenState  HomeState
 	menu_choices []string
 	cursor       int
 	selected     map[int]struct{}
